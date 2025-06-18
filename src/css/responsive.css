@@ -1,0 +1,171 @@
+@media (min-width:20em) {
+
+    body {
+        font-family: "Barlow Semi Condensed", sans-serif;
+        background-color: hsl(214, 17%, 92%);
+    }
+
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo .caixa-principal {
+        margin: 1.5em;
+        border-radius: 0.5em;
+        padding: 2em;
+        box-shadow: 3em 4em 1em hsl(0, 0%, 81%);
+    }
+
+    .conteudo .caixa-principal .foto-nome-cargo {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .conteudo .caixa-principal .foto-nome-cargo .foto {
+        border-radius: 2em;
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    .conteudo .caixa-principal .foto-nome-cargo .nome {
+        font-size: 0.8em;
+        font-weight: 600;
+    }
+
+    .conteudo .caixa-principal .foto-nome-cargo .cargo {
+        font-size: 0.7em;
+        font-weight: 500;
+    }
+
+    .conteudo .caixa-principal .titulos {
+        font-size: 1.3em;
+        padding: 1em 0;
+        font-weight: 600;
+    }
+
+    .conteudo .caixa-principal .textos {
+        font-size: 0.8em;
+        font-weight: 500;
+        line-height: 1.5em;
+    }
+
+    .conteudo .caixa-principal.daniel .pattern-svg-fora {
+        display: none;
+    }
+}
+
+@media (min-width:48em) {
+
+    html{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    body {
+        min-width: 48em;
+        min-height: 48em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteudo {
+        width: 80em;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "daniel daniel jonathan kira"
+            "jeanette patrick patrick kira"
+        ;
+         
+    }
+
+    .conteudo .caixa-principal {
+        margin: 1em;
+    }
+
+    .conteudo .caixa-principal.daniel {
+        position: relative;
+        z-index: -2;
+    }
+
+    .conteudo .caixa-principal.daniel .pattern-svg-fora {
+        display: block;
+        width: 7em;
+        height: 7em;
+        position: absolute;
+        top: 0.1em;
+        right: 5em;
+        z-index: -1;
+    }
+
+
+
+}
+
+.daniel {
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 100%);
+    grid-area: daniel;
+}
+
+.daniel .foto-nome-cargo .foto {
+    border: 0.2em solid hsl(264, 82%, 80%);
+}
+
+.jonathan {
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%);
+    grid-area: jonathan;
+}
+
+.jonathan .foto-nome-cargo .cargo {
+    color: hsl(0, 0%, 81%);
+}
+
+.jeanette {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+    grid-area: jeanette;
+}
+
+.jeanette .foto-nome-cargo .cargo,
+.jeanette .textos {
+    color: hsl(224, 10%, 45%);
+}
+
+.patrick {
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 100%);
+    grid-area: patrick;
+}
+
+.patrick .titulos,
+.patrick .textos {
+    color: hsl(0, 0%, 81%);
+}
+
+
+.patrick .foto-nome-cargo .foto {
+    border: 0.2em solid hsl(263, 55%, 52%);
+}
+
+
+.kira {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+    grid-area: kira;
+}
+
+.kira .foto-nome-cargo .cargo {
+    color: hsl(0, 0%, 81%);
+}
+
+.kira .textos {
+    color: hsl(224, 10%, 45%);
+}
