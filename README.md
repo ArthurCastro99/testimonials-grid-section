@@ -1,10 +1,10 @@
 # Projeto Testimonials Grid Section (Frontend Mentor)
 
 Versão Original
-![Versão original](./preview.jpg)
+![Versão original](./src/design/preview.jpg)
 
-Versão Final
-![Minha versão](./solucao.jpg)
+Minha Versão
+![Minha versão](./src/design/solucao.jpg)
 
 ## Tudo Bem ? 👋
 
